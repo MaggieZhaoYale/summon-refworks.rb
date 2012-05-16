@@ -5,9 +5,11 @@ to [refworks tagged format][1]
 
 It does this by implementing a single `to_refworks` method, which returns
 a hash containing refworks tags as keys corresponding to field values.
-
-    document = summon.search('shakespeare').first
-    document.to_refworks #=> {:RT => 'Play', :T1 => 'Romeo and Juliet', ...}
+```ruby
+document = summon.search('shakespeare').first
+require 'summon/refworks'
+document.to_refworks #=> {:RT => 'Play', :T1 => 'Romeo and Juliet', ...}
+```
 
 ## Mappings
 
