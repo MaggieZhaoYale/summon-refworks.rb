@@ -64,7 +64,7 @@
   U13: blank, #User 13
   U14: blank, #User 14
   U15: blank, #User 15
-  UL: ->() { url }, #URL
+  UL: ->() { link }, #URL
   SL: blank, #Sponsoring Library
   LL: blank, #Sponsoring Library Location
   CR: blank, #Cited References
