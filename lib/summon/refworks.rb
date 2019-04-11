@@ -26,7 +26,7 @@ module Summon
       end
 
       def refworks_tags
-        filename = File.expand_path("../mappings.rb", __FILE__)
+        filename = File.expand_path("../ris_mappings.rb", __FILE__)
         eval(File.read(filename), binding, filename, 1)
       end
 
@@ -39,7 +39,7 @@ module Summon
       end
 
       def content_type_to_reference_type
-        mapping = YAML.load(File.read File.expand_path("../RT.yaml", __FILE__))
+        mapping = YAML.load(File.read File.expand_path("../ris_content.yaml", __FILE__))
         mapping[content_type] || 'Generic'
       end
 
