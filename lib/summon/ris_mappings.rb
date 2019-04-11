@@ -14,7 +14,7 @@
   A3: blank, #Tertiary Authors
   A4: blank, #Quaternary Authors
   AB: ->() { abstract }, #Abstract
-  AD: blank, #Author Address
+  AD: ->(), #Author Address
   AN: blank, #Accession Number
   CN: blank, #Call Number
   CY: ->() { publication_place }, #Place of Publication
